@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE34D79C1373AFD3004B75A8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE34D79B1373AFD3004B75A8 /* Cocoa.framework */; };
+		EE34D7B81373B0D9004B75A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE34D7B71373B0D9004B75A8 /* Foundation.framework */; };
+		EE34D7BB1373B0D9004B75A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE34D7BA1373B0D9004B75A8 /* main.m */; };
+		EE34D7CD1373B43E004B75A8 /* Cedar.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE34D7CB1373B43E004B75A8 /* Cedar.framework */; };
+		EE34D7CE1373B43E004B75A8 /* OCHamcrest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE34D7CC1373B43E004B75A8 /* OCHamcrest.framework */; };
+		EE34D7CF1373B44E004B75A8 /* Cedar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE34D7CB1373B43E004B75A8 /* Cedar.framework */; };
+		EE34D7D01373B44E004B75A8 /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE34D7CC1373B43E004B75A8 /* OCHamcrest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EE34D7B31373B0D9004B75A8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EE34D7CA1373B41D004B75A8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EE34D7CD1373B43E004B75A8 /* Cedar.framework in CopyFiles */,
+				EE34D7CE1373B43E004B75A8 /* OCHamcrest.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EE34D7981373AFD3004B75A8 /* libEnumerable.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEnumerable.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE34D79B1373AFD3004B75A8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		EE34D79E1373AFD3004B75A8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		EE34D79F1373AFD3004B75A8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EE34D7A01373AFD3004B75A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EE34D7A31373AFD3004B75A8 /* Enumerable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Enumerable-Prefix.pch"; sourceTree = "<group>"; };
+		EE34D7B51373B0D9004B75A8 /* Specs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Specs; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE34D7B71373B0D9004B75A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EE34D7BA1373B0D9004B75A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE34D7BD1373B0D9004B75A8 /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
+		EE34D7CB1373B43E004B75A8 /* Cedar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cedar.framework; path = Libs/Cedar.framework; sourceTree = "<group>"; };
+		EE34D7CC1373B43E004B75A8 /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrest.framework; path = Libs/OCHamcrest.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE34D7951373AFD3004B75A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE34D79C1373AFD3004B75A8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE34D7B21373B0D9004B75A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE34D7B81373B0D9004B75A8 /* Foundation.framework in Frameworks */,
+				EE34D7CF1373B44E004B75A8 /* Cedar.framework in Frameworks */,
+				EE34D7D01373B44E004B75A8 /* OCHamcrest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE34D78D1373AFD2004B75A8 = {
+			isa = PBXGroup;
+			children = (
+				EE34D7A11373AFD3004B75A8 /* Enumerable */,
+				EE34D7B91373B0D9004B75A8 /* Specs */,
+				EE34D79A1373AFD3004B75A8 /* Frameworks */,
+				EE34D7991373AFD3004B75A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE34D7991373AFD3004B75A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE34D7981373AFD3004B75A8 /* libEnumerable.a */,
+				EE34D7B51373B0D9004B75A8 /* Specs */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE34D79A1373AFD3004B75A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE34D7CB1373B43E004B75A8 /* Cedar.framework */,
+				EE34D7CC1373B43E004B75A8 /* OCHamcrest.framework */,
+				EE34D79B1373AFD3004B75A8 /* Cocoa.framework */,
+				EE34D7B71373B0D9004B75A8 /* Foundation.framework */,
+				EE34D79D1373AFD3004B75A8 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE34D79D1373AFD3004B75A8 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE34D79E1373AFD3004B75A8 /* AppKit.framework */,
+				EE34D79F1373AFD3004B75A8 /* CoreData.framework */,
+				EE34D7A01373AFD3004B75A8 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		EE34D7A11373AFD3004B75A8 /* Enumerable */ = {
+			isa = PBXGroup;
+			children = (
+				EE34D7A21373AFD3004B75A8 /* Supporting Files */,
+			);
+			path = Enumerable;
+			sourceTree = "<group>";
+		};
+		EE34D7A21373AFD3004B75A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE34D7A31373AFD3004B75A8 /* Enumerable-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE34D7B91373B0D9004B75A8 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				EE34D7BA1373B0D9004B75A8 /* main.m */,
+				EE34D7BC1373B0D9004B75A8 /* Supporting Files */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		EE34D7BC1373B0D9004B75A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE34D7BD1373B0D9004B75A8 /* Specs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EE34D7961373AFD3004B75A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EE34D7971373AFD3004B75A8 /* Enumerable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE34D7A61373AFD3004B75A8 /* Build configuration list for PBXNativeTarget "Enumerable" */;
+			buildPhases = (
+				EE34D7941373AFD3004B75A8 /* Sources */,
+				EE34D7951373AFD3004B75A8 /* Frameworks */,
+				EE34D7961373AFD3004B75A8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Enumerable;
+			productName = Enumerable;
+			productReference = EE34D7981373AFD3004B75A8 /* libEnumerable.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EE34D7B41373B0D9004B75A8 /* Specs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE34D7BF1373B0D9004B75A8 /* Build configuration list for PBXNativeTarget "Specs" */;
+			buildPhases = (
+				EE34D7CA1373B41D004B75A8 /* CopyFiles */,
+				EE34D7B11373B0D9004B75A8 /* Sources */,
+				EE34D7B21373B0D9004B75A8 /* Frameworks */,
+				EE34D7B31373B0D9004B75A8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Specs;
+			productName = Specs;
+			productReference = EE34D7B51373B0D9004B75A8 /* Specs */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE34D78F1373AFD3004B75A8 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = EE34D7921373AFD3004B75A8 /* Build configuration list for PBXProject "Enumerable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EE34D78D1373AFD2004B75A8;
+			productRefGroup = EE34D7991373AFD3004B75A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE34D7971373AFD3004B75A8 /* Enumerable */,
+				EE34D7B41373B0D9004B75A8 /* Specs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE34D7941373AFD3004B75A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE34D7B11373B0D9004B75A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE34D7BB1373B0D9004B75A8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EE34D7A41373AFD3004B75A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EE34D7A51373AFD3004B75A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EE34D7A71373AFD3004B75A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Enumerable/Enumerable-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE34D7A81373AFD3004B75A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Enumerable/Enumerable-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EE34D7C01373B0D9004B75A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libs\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE34D7C11373B0D9004B75A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libs\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE34D7921373AFD3004B75A8 /* Build configuration list for PBXProject "Enumerable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE34D7A41373AFD3004B75A8 /* Debug */,
+				EE34D7A51373AFD3004B75A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE34D7A61373AFD3004B75A8 /* Build configuration list for PBXNativeTarget "Enumerable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE34D7A71373AFD3004B75A8 /* Debug */,
+				EE34D7A81373AFD3004B75A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EE34D7BF1373B0D9004B75A8 /* Build configuration list for PBXNativeTarget "Specs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE34D7C01373B0D9004B75A8 /* Debug */,
+				EE34D7C11373B0D9004B75A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE34D78F1373AFD3004B75A8 /* Project object */;
+}
