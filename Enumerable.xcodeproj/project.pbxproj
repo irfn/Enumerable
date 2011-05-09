@@ -14,6 +14,10 @@
 		EE34D7CE1373B43E004B75A8 /* OCHamcrest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE34D7CC1373B43E004B75A8 /* OCHamcrest.framework */; };
 		EE34D7CF1373B44E004B75A8 /* Cedar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE34D7CB1373B43E004B75A8 /* Cedar.framework */; };
 		EE34D7D01373B44E004B75A8 /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE34D7CC1373B43E004B75A8 /* OCHamcrest.framework */; };
+		EE34D7E81373B9E0004B75A8 /* Enumerable.h in Headers */ = {isa = PBXBuildFile; fileRef = EE34D7E61373B9E0004B75A8 /* Enumerable.h */; };
+		EE34D7E91373B9E0004B75A8 /* Enumerable.m in Sources */ = {isa = PBXBuildFile; fileRef = EE34D7E71373B9E0004B75A8 /* Enumerable.m */; };
+		EE34D7EA1373B9E0004B75A8 /* Enumerable.m in Sources */ = {isa = PBXBuildFile; fileRef = EE34D7E71373B9E0004B75A8 /* Enumerable.m */; };
+		EE34D7ED1373BA50004B75A8 /* EnumerableSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = EE34D7EC1373BA50004B75A8 /* EnumerableSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +56,9 @@
 		EE34D7BD1373B0D9004B75A8 /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
 		EE34D7CB1373B43E004B75A8 /* Cedar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cedar.framework; path = Libs/Cedar.framework; sourceTree = "<group>"; };
 		EE34D7CC1373B43E004B75A8 /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrest.framework; path = Libs/OCHamcrest.framework; sourceTree = "<group>"; };
+		EE34D7E61373B9E0004B75A8 /* Enumerable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enumerable.h; sourceTree = "<group>"; };
+		EE34D7E71373B9E0004B75A8 /* Enumerable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enumerable.m; sourceTree = "<group>"; };
+		EE34D7EC1373BA50004B75A8 /* EnumerableSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnumerableSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				EE34D7A21373AFD3004B75A8 /* Supporting Files */,
+				EE34D7E61373B9E0004B75A8 /* Enumerable.h */,
+				EE34D7E71373B9E0004B75A8 /* Enumerable.m */,
 			);
 			path = Enumerable;
 			sourceTree = "<group>";
@@ -138,6 +147,7 @@
 			children = (
 				EE34D7BA1373B0D9004B75A8 /* main.m */,
 				EE34D7BC1373B0D9004B75A8 /* Supporting Files */,
+				EE34D7EC1373BA50004B75A8 /* EnumerableSpec.m */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -157,6 +167,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE34D7E81373B9E0004B75A8 /* Enumerable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE34D7E91373B9E0004B75A8 /* Enumerable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +246,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE34D7BB1373B0D9004B75A8 /* main.m in Sources */,
+				EE34D7EA1373B9E0004B75A8 /* Enumerable.m in Sources */,
+				EE34D7ED1373BA50004B75A8 /* EnumerableSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
