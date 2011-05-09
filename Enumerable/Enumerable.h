@@ -11,13 +11,14 @@
 
 @interface NSArray (Enumerable)
 
-typedef BOOL (^SelectionPredicate)(id item);
-typedef BOOL (^DetectionPredicate)(id item);
+typedef BOOL (^ BooleanPredicate)(id item);
 typedef id (^ItemPredicate)(id item);
+- (BOOL) isAnyMatching:(BooleanPredicate) criteria;
+- (BOOL) areAllMatching:(BooleanPredicate) criteria;
 
-- (NSArray*) select:(SelectionPredicate) criteria;
-- (id) detect:(DetectionPredicate) criteria;
+- (NSArray*) select:(BooleanPredicate) criteria;
 - (NSArray*) collect:(ItemPredicate) itemPredicate;
+- (id) detect:(BooleanPredicate) criteria;
 
 @end
 

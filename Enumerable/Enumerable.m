@@ -11,7 +11,23 @@
 
 @implementation NSArray (Enumerable)
 
-- (NSArray*) select:(SelectionPredicate)criteria{
+- (BOOL) isAnyMatching:(BooleanPredicate)criteria{
+  for (id item in self) {
+    if(criteria(item))
+      return YES;
+  }
+  return NO;
+}
+
+- (BOOL) areAllMatching:(BooleanPredicate)criteria{
+  for (id item in self) {
+    if(!criteria(item))
+      return NO;
+  }
+  return YES;
+}
+
+- (NSArray*) select:(BooleanPredicate)criteria{
   NSMutableArray *selections = [[NSMutableArray alloc] init];
   for (id item in self) {
     if(criteria(item))
@@ -20,7 +36,7 @@
   return selections;
 }
 
-- (id) detect:(DetectionPredicate)criteria{
+- (id) detect:(BooleanPredicate)criteria{
   for (id item in self) {
     if(criteria(item))
       return item;
