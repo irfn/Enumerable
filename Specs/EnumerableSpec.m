@@ -39,7 +39,16 @@ describe(@"Enumerable", ^{
     
     assertThat(collectedItems, equalTo(array(@"a", @"a")));
   });
+
+  it(@"should count items matching predicate", ^{
+    NSInteger numberOfItems = [array(@"a", @"b", @"c", @"a") count:^(NSString *item){
+      return [item isEqualToString:@"a"]; 
+    }];
+    
+    assertThatInteger(numberOfItems, equalToInteger(2));
+  });
   
+
   it(@"should verify all items match", ^{
    BOOL allDonotMatch = [array(@"a", @"b", @"c", @"a") areAllMatching:^(NSString *item){
       return [item isEqualToString:@"a"]; 
@@ -51,7 +60,13 @@ describe(@"Enumerable", ^{
     assertThatBool(allMatch, equalToBool(YES));
 
   });
+
+  it(@"should drop specified number of items", ^{                               
+    assertThat([array(@"a", @"b", @"c", @"d", @"e", @"f") drop: 3], equalTo(array(@"d", @"e", @"f")));
+    
+  });
   
+
 });
 SPEC_END
 

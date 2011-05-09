@@ -13,11 +13,14 @@
 
 typedef BOOL (^ BooleanPredicate)(id item);
 typedef id (^ItemPredicate)(id item);
+
 - (BOOL) isAnyMatching:(BooleanPredicate) criteria;
 - (BOOL) areAllMatching:(BooleanPredicate) criteria;
-
-- (NSArray*) select:(BooleanPredicate) criteria;
 - (NSArray*) collect:(ItemPredicate) itemPredicate;
+
+- (NSInteger) count:(BooleanPredicate) criteria; 
+- (NSArray*) drop:(NSInteger) number; 
+- (NSArray*) select:(BooleanPredicate) criteria;
 - (id) detect:(BooleanPredicate) criteria;
 
 @end

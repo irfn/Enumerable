@@ -27,6 +27,20 @@
   return YES;
 }
 
+- (NSArray*) collect:(ItemPredicate)itemPredicate{
+  NSMutableArray *collections = [[NSMutableArray alloc] init];
+  for (id item in self) {
+    id translatedObject = itemPredicate(item);
+    if(translatedObject != NULL)
+      [collections addObject:translatedObject];
+  }
+  return collections;
+}
+
+-(NSInteger)count:(BooleanPredicate)criteria{
+  return [[self select:criteria] count];
+}
+
 - (NSArray*) select:(BooleanPredicate)criteria{
   NSMutableArray *selections = [[NSMutableArray alloc] init];
   for (id item in self) {
@@ -44,17 +58,9 @@
   return NULL;
 }
 
-- (NSArray*) collect:(ItemPredicate)itemPredicate{
-  NSMutableArray *collections = [[NSMutableArray alloc] init];
-  for (id item in self) {
-    id translatedObject = itemPredicate(item);
-    if(translatedObject != NULL)
-      [collections addObject:translatedObject];
-  }
-  return collections;
+-(NSArray *)drop:(NSInteger)number{
+  return [self subarrayWithRange:NSMakeRange(number, [self count] - number)];
 }
-
-
 @end
 
 
